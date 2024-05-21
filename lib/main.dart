@@ -1,10 +1,16 @@
-import 'package:chicart/pages/Intropage.dart';
+import 'package:chicart/pages/auth_page.dart';
 import 'package:chicart/pages/homepage.dart';
 import 'package:chicart/pages/loginpage.dart';
-import 'package:chicart/pages/signup.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
-void main() {
+import 'firebase_options.dart';
+
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
   runApp(const MyApp());
 }
 
@@ -15,11 +21,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute: '/', // Set the initial route
+      home: const AuthPage(),
       routes: {
-        '/': (context) => const IntroPage(), // IntroPage as the initial screen
-        '/loginpage': (context) => const LoginPage(),
-        '/sign_up': (context) => const SignUpPage(),
+        '/loginpage': (context) => LoginPage(),
+        // '/sign_up': (context) => const SignUpPage(),
         '/homepage': (context) => const ProductListPage(),
       },
     );

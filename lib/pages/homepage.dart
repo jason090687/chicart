@@ -1,4 +1,3 @@
-import 'package:chicart/components/Home/products.dart';
 import 'package:chicart/components/Home/search_fields.dart';
 import 'package:flutter/material.dart';
 
@@ -48,13 +47,6 @@ class ProductListPage extends StatelessWidget {
                 crossAxisCount: 2,
                 mainAxisSpacing: 10,
                 crossAxisSpacing: 10,
-                children: const [
-                  ProductPage(
-                      title: 'Apple Beats Solo3',
-                      price: 5000,
-                      imagePath: 'assets/item1.png',
-                      rating: 4.5)
-                ],
               ),
             ),
           ],

@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 
 class LoginButton extends StatelessWidget {
   final VoidCallback onPressed;
-  final String? routeName;
+  LoginButton({super.key, required this.onPressed});
 
-  const LoginButton(
-      {super.key, required this.onPressed, required this.routeName});
+  final emailController = TextEditingController();
+  final passwordController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -17,9 +17,7 @@ class LoginButton extends StatelessWidget {
           borderRadius: BorderRadius.circular(25.0),
         ),
       ),
-      onPressed: () {
-        Navigator.pushNamed(context, routeName!);
-      },
+      onPressed: onPressed,
       child: const Text('Login', style: TextStyle(fontSize: 18.0)),
     );
   }

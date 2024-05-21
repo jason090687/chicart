@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
 
 class ConfirmPasswordField extends StatelessWidget {
-  const ConfirmPasswordField({super.key});
+  ConfirmPasswordField({super.key});
+
+  final confirmPasswordController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
     return TextField(
+      controller: confirmPasswordController,
       obscureText: true,
       decoration: InputDecoration(
         prefixIcon: const Icon(Icons.key),

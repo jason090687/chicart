@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "132546174553",
+    "project_id": "chichart-79660",
+    "storage_bucket": "chichart-79660.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:132546174553:android:f27fc01eb1817da5589b48",
+        "android_client_info": {
+          "package_name": "com.example.chicart"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPktST-CJHwqKROkH4eHZBH-7rwlSVZyI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
