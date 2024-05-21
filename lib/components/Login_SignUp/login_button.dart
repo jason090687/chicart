@@ -2,10 +2,7 @@ import 'package:flutter/material.dart';
 
 class LoginButton extends StatelessWidget {
   final VoidCallback onPressed;
-  LoginButton({super.key, required this.onPressed});
-
-  final emailController = TextEditingController();
-  final passwordController = TextEditingController();
+  const LoginButton({super.key, required this.onPressed});
 
   @override
   Widget build(BuildContext context) {

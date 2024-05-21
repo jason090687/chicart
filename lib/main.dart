@@ -1,6 +1,5 @@
 import 'package:chicart/pages/auth_page.dart';
 import 'package:chicart/pages/homepage.dart';
-import 'package:chicart/pages/loginpage.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
@@ -23,7 +22,6 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: const AuthPage(),
       routes: {
-        '/loginpage': (context) => LoginPage(),
         // '/sign_up': (context) => const SignUpPage(),
         '/homepage': (context) => const ProductListPage(),
       },
