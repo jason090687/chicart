@@ -1,5 +1,5 @@
-import 'package:chicart/pages/auth_page.dart';
 import 'package:chicart/pages/homepage.dart';
+import 'package:chicart/pages/order_confirm.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: const AuthPage(),
+      home: const OrderConfirmationPage(),
       routes: {
         // '/sign_up': (context) => const SignUpPage(),
         '/homepage': (context) => const ProductListPage(),
